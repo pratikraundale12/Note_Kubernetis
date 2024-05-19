@@ -1,0 +1,86 @@
+========================
+Kubernetes Cluster Setup
+========================
+
+1) Self Managed Cluster ( We will create our own cluster )
+		
+		a) Mini Kube ( Single Node Cluster )
+
+		b) Kubeadm  (Multi Node Cluster)
+
+2) Provider Managed Cluster (Cloud Provide will give read made cluster) ---> Charges applies
+
+		a) AWS EKS
+
+		b) Azure  AKS
+	
+		c) GCP GKE
+
+=====================================
+Minikube Cluster setup on windows OS
+=====================================
+
+1) Download and install Docker Desktop software in Windows 
+	( URL : https://docs.docker.com/desktop/install/windows-install/ )
+
+2) Download and install Minikube  ( URL : https://minikube.sigs.k8s.io/docs/start/)
+
+3) Download and install Kubectl (URL : https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/ )
+
+
+========================
+AWS EKS Cluster Setup 
+=========================
+
+Git Hub Repo : https://github.com/ashokitschool/DevOps-Documents/blob/main/EKS-Setup.md
+
+
+=======================
+Kubernetes Components
+=======================
+
+1) POD
+2) Services
+3) Namespaces
+4) Replication Controller
+5) Replication Set
+6) DaemonSet
+7) Deployment
+8) StatefulSet
+9) ConfigMap & Secrets
+10) IngressController
+11) K8S Volumes
+12) HELM Charts
+13) Grafana & Promethues
+14) ELK Setup (Log Aggregation)
+15) RBAC
+16) K8S Web Dashboard
+==============
+What is POD ?
+==============
+
+=> POD is a smallest building block in k8s cluster
+
+=> In K8S, every container will be created inside POD only
+
+=> POD always runs inside Node
+
+=> POD represents running process
+
+=> POD means group of containers running on a Node
+
+=> We can create multiple PODS on single node
+
+=> Every POD will have unique IP address
+
+=> We can create PODS in 2 ways
+
+		1) Interactive Approach
+
+			$ kubectl run --name <pod-name> image=<image-name> --generate=pod/v1
+
+		2) Declarative Approach ( K8S Manifest YML )
+
+
+
+
